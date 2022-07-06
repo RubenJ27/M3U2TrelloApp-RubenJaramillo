@@ -1,0 +1,15 @@
+/*estilos-predeterminados*/
+:root {
+  --color-gray-mediem: #f8f9fa;
+  --color-white: #FFFFFF;
+  --color-gray: #F7F7F7;
+  --color-gray-text: #999999;
+  --color-green: #8DC63F;
+ }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 0.080rem;
+}
