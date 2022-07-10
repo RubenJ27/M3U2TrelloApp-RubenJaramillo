@@ -1,20 +1,17 @@
 @import './components/buttons.css';
 
-/*estilos-predeterminados*/
-:root {
-  --color-gray-mediem: #f8f9fa;
-  --color-white: #FFFFFF;
-  --color-gray: #F7F7F7;
-  --color-gray-text: #999999;
-  --color-green: #8DC63F;
- }
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  letter-spacing: 0.080rem;
-}
+
+/* config files */
+@import './config/reset.css';
+@import './config/var.css';
+/* layout files */
+/* theme files */
+/* components files */
+/* components files */
+
+
+
+
 
 .container__header__app{
   background-color: #1178BB;
@@ -29,9 +26,19 @@
 }
 
 .logo{
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    top: 0;
+    width: 75px;
+    height: 15px;
+
+  /* font-size: 4rem;
   width: 1.6rem;
   height: 1.6rem;
-  margin-right: 0.7rem;
+  margin-right: 0.7rem; */
 }
 
 .l-container{

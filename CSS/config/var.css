@@ -1,0 +1,72 @@
+/*estilos-predeterminados*/
+:root {
+
+  /* COLOR PALETTE*/
+  /***************************/
+  --color-green-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #eaebed;
+  --color-gray-mediem: #817f7f;
+  --color-yellow: #e0c527;
+  --color-green: #37bb3e;
+  --color-blue: #3b4fff;
+  --color-red: #ff3838;
+  --color-black: #161616;
+  --color-white: #FFFFFF;
+  --dynamic-background-color: hsl(150,2.7%,14.5%);
+
+ /*  nav background-color: var(--dynamic-background-color, #026AA7); 
+ backdrop-filter: blur(6px);
+ */
+
+  /* primary color */
+  /* secondary color */
+  /* tertiary color */
+
+  /* accent color */
+  --c-accent-lighter: #f0f0f0;
+  --c-accent-darker: #00000d19;
+
+  /* text color */
+  --c-text-light: var(--c-accent-lighter);
+  --c-text-dark: var(--c-accent-darker);
+
+  /* background color */
+  --c-background-light: var(--c-accent-lighter);
+
+
+
+
+  /***************************/
+
+  /* TYPOGRAFHY */
+  /***************************/
+  /* font family */
+  --f-first: "Oswald", sans-serif;
+  --f-second: "Raleway", sans-serif;
+
+  /* font weight */
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /***************************/
+
+  /* THEME */
+  /***************************/
+  /* scale */
+  --scale-xs: scale(0.90);
+
+  /* transition */
+  --duration-transition-base: 300ms ease-in-out;
+
+  /***************************/
+
+  /* LAYOUT */
+  /***************************/
+  
+
+  /***************************/
+
+
+ }
