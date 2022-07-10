@@ -10,3 +10,55 @@
   border: var(--color-green);
   background-color: var(--color-green);
 }
+
+.container__header__item__icon{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  font-weight: bolder;
+  color: var(--color-white);
+}
+
+.container__header__item__icon-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0 0.3rem;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+.container__header__item__icon-menu:hover{
+  transition: var(--duration-transition-base);
+  padding: 0 0.3rem;
+  background-color: rgb(77, 77, 77);
+}
+
+.container__header__items__profile-btns{
+  display: flex;
+  padding: 0 0.3rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__header__items__profile-btns:hover{
+  transition: var(--duration-transition-base);
+  padding: 0 0.3rem;
+  background-color: rgb(77, 77, 77);
+}
+
+.container__header__items__profile-btns{
+  display: flex;
+  margin: auto 0.2rem;
+  padding: 0 0.3rem;
+  width: 32px;
+  height: 32px;
+  color: var(--color-white);
+}
+
+.container__header__item__profile-btn{
+  display: flex;
+}
