@@ -1,0 +1,116 @@
+.main__container{
+  flex-direction: column;
+}
+
+.main__container, 
+.main__container .container__boxes{
+  flex: 1;
+  display: flex;
+  gap: var(--gutter);
+}
+
+.container__columns{
+  background-color: var(--color-card);
+  width: 272px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container__row__title{
+  display: flex;
+  padding: 10px 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__row__title__card{
+  color: var(--color-blue-tittle-card);
+  font-weight: var(--fw-bold); 
+  font-family: var(--f-third);
+  font-size: var(--font-size-title-card);
+  line-height: var(--line-height-tittle);
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+
+.container__row__title__icons{
+  display: flex;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.container__row__title__icon{
+  font-size: var(--font-sise-icon);
+  color: var(--color-gray-icon);
+  line-height: 20px;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.container__row__title__icon:hover{
+  transition: var(--duration-transition-base);
+  color: var(--color-black-tittle-card);
+}
+
+.container__tasks{
+  flex: 1 1 auto;
+  margin: 0 4px;
+  padding: 0 4px;
+}
+
+.container__tasks__row{
+  box-shadow: 0 1px 0 var(--color-border-card);
+  padding: 6px 8px 2px;
+  color: var(--color-blue-tittle-card);
+  display: block;
+  margin: 0 0 4px;
+  text-decoration: none;
+}
+
+.container__task__title{
+  font-size: var(--font-size-default);
+  color: var(--color-blue-tittle-card);
+  font-weight: var(--fw-semi-bold);
+}
+
+.container__tasks__responsible{
+  margin: 10px 0;
+}
+
+.container__add-task{
+  display: flex;
+  justify-content: space-between;
+  max-height: 38px;
+  min-height: 38px;
+}
+
+.container__add-target{
+  color: var(--color-gray-icon);
+  display: block;
+  flex: 1 0 auto;
+  margin: 2px 0 8px 8px;
+  padding: 4px 8px;
+  position: relative;
+  text-decoration: none;
+}
+.container__add-target:hover{
+  transition: var(--duration-transition-base);
+  color: var(--color-black-tittle-card);
+}
+
+.container__tasks__badges{
+  display: block;
+  flex: 1 0 auto;
+  margin: 5px 1px;
+  padding: 4px 8px;
+  position: relative;
+  text-decoration: none;
+}
+
+.container__task__badges__due-date{
+  color: var(--color-gray-icon);
+}

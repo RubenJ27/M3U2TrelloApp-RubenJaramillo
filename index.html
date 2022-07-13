@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/trello.svg">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/04a8186d46.js" crossorigin="anonymous"></script>
   <title>Trello App</title>
 </head>
 
-<body>
-  <div class="container__all" style="background-image: url(assets/wallpaper-trello.jpg);">
+<body class="container__all">
+  <div class="container__backgorund__img" style="background-image: url(assets/wallpaper-trello.jpg);">
     <!-- Header -->
     <header class="container__header">
-      <div class="container__header__items">
+      <div class="container__boxes">
         <div class="container__header__item__icon">
           <span class="container__header__item__icon-menu">
             <svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24"
@@ -67,46 +68,163 @@
     <!-- Canva -->
 
     <main class="main__container">
-      <div class="main__container__columns">
+      <div class="container__boxes">
         <!-- Colums tareas por hacer -->
         <section class="container__columns">
-          <h2 class="container__columns__to-do__tittle">Por hacer</h2>
-          <div class="container__task-to-do" id="taskToDo">
+          <div class="container__row__title">
+            <h2 class="container__row__title__card">Por hacer</h2>
+            <div class="container__row__title__icons">
+              <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+          <div class="container__tasks">
+            <a href="#" class="container__tasks__row">
+              <span class="container__task__title" id="taskToDo">
+                Website Launch Checklist Overview
+              </span>
+
+              <div class="container__tasks__responsible">
+                <span class="container__tasks__responsible__tittle">
+                  Responsible:
+                </span>
+                <span class="container__tasks__responsible__tittle">
+                  User2
+                </span>
+              </div>
+
+              <div class="container__tasks__badges">
+                <span class="container__task__badges__icons">
+                  <div class="container__task__badges__due-date">
+                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
+                    <span class="container__task__badges__due-date-text">16 de ago</span>
+                  </div>
+                </span>
+              </div>
+            </a>
 
           </div>
+
+
+
+          <div class="container__add-task">
+            <a href="#" class="container__add-target">
+              <span class="container__add-icon"><i class="fa-solid fa-plus"></i></span>
+              <span class="container__add-text">Añada una tarjeta</span>
+            </a>
+          </div>
+
         </section>
         <!-- Fin colums tareas por hacer -->
 
         <!-- Colums tareas en progreso -->
         <section class="container__columns">
-          <h2 class="container__columns__task-in-progress__tittle">En progreso</h2>
-          <div class="container__task-in-progress" id="taskInProgress">
+          <div class="container__row__title">
+            <h2 class="container__row__title__card">En progreso</h2>
+            <div class="container__row__title__icons">
+              <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+          <div class="container__tasks">
+            <a href="#" class="container__tasks__row">
+              <span class="container__task__title" id="taskToDo">
+                Things to-do in project
+              </span>
+
+              <div class="container__tasks__responsible">
+                <span class="container__tasks__responsible__tittle">
+                  Responsible:
+                </span>
+                <span class="container__tasks__responsible__tittle">
+                  User3
+                </span>
+              </div>
+
+              <div class="container__tasks__badges">
+                <span class="container__task__badges__icons">
+                  <div class="container__task__badges__due-date">
+                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
+                    <span class="container__task__badges__due-date-text">30 de ago</span>
+                  </div>
+                </span>
+              </div>
+            </a>
 
           </div>
+
+          <div class="container__add-task">
+            <a href="#" class="container__add-target">
+              <span class="container__add-icon"><i class="fa-solid fa-plus"></i></span>
+              <span class="container__add-text">Añada una tarjeta</span>
+            </a>
+          </div>
+
         </section>
         <!-- Fin colums tareas en progreso -->
 
         <!-- Colums tareas finalizadas-->
         <section class="container__columns">
-          <h2 class="container__columns__completed-task__tittle">Finalizadas</h2>
-          <div class="container__completed-task" id="completedTask">
+          <div class="container__row__title">
+            <h2 class="container__row__title__card">Finalizadas</h2>
+            <div class="container__row__title__icons">
+              <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
+            </div>
+          </div>
+          <div class="container__tasks">
+            <a href="#" class="container__tasks__row">
+              <span class="container__task__title" id="taskToDo">
+                Tasks in to-do that have been thoroughly completed
+              </span>
+
+              <div class="container__tasks__responsible">
+                <span class="container__tasks__responsible__tittle">
+                  Responsible:
+                </span>
+                <span class="container__tasks__responsible__tittle">
+                  User1
+                </span>
+              </div>
+
+              <div class="container__tasks__badges">
+                <span class="container__task__badges__icons">
+                  <div class="container__task__badges__due-date">
+                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
+                    <span class="container__task__badges__due-date-text">25 de ago</span>
+                  </div>
+                </span>
+              </div>
+            </a>
 
           </div>
+
+
+
+          <div class="container__add-task">
+            <a href="#" class="container__add-target">
+              <span class="container__add-icon"><i class="fa-solid fa-plus"></i></span>
+              <span class="container__add-text">Añada una tarjeta</span>
+            </a>
+          </div>
+
         </section>
         <!-- Fin colums tareas finalizadas -->
       </div>
-    </main>
 
-    <!-- Cierre del canva -->
 
-    <!-- Aside -->
+  </div>
+  </main>
+
+  <!-- Cierre del canva -->
+
+  <!-- Aside -->
+  <!-- 
     <aside class="aside__container" id="newTaskModal">
+      
       <div class="l-container">
         <div class="form-container">
           <h2 class="aside-fotm-tittle">Añadir nueva tarea a la lista</h2>
 
           <form class="form-new-task" id="formNewTask">
-            <!-- Input titulo -->
+            <!-- Input titulo 
             <div class="row-form">
               <label for="tittleTask" class="form-newTask__task__label">Titulo:</label>
 
@@ -115,7 +233,7 @@
             </div>
             <!-- Fin input titulo -->
 
-            <!-- Input responsable -->
+  <!-- Input responsable 
             <div class="row-form">
               <label for="responsable" class="form-newTask__task__label">Resposanble:</label>
               <select name="responsableTask" id="resposanbleTask">
@@ -126,7 +244,7 @@
             </div>
             <!-- Fin input responsable -->
 
-            <!-- Input deadline -->
+  <!-- Input deadline 
             <div class="row-form">
               <label for="deadLineTask" class="form-new-task__label">Plazo de entrega:</label>
               <select name="responsableTask" id="resposanbleTask">
@@ -140,7 +258,7 @@
 
             <!-- Fin deadline -->
 
-            <!-- Botones -->
+  <!-- Botones 
             <div class="row-form">
               <div class="form-new-task__buttons">
                 <button class="button button-primary" type="submit">Guardar</button>
@@ -148,13 +266,13 @@
               </div>
             </div>
 
-            <!-- Fin botones -->
+            <!-- Fin botones 
           </form>
         </div>
 
       </div>
-    </aside>
-    <!-- Cierre aside -->
+    </aside> -->
+  <!-- Cierre aside -->
 
 
   </div>

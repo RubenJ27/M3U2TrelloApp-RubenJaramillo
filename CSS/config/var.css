@@ -6,18 +6,20 @@
   --color-green-medium: #8fe2e4;
   --color-purple: #632ce7;
   --color-gray: #eaebed;
+  --color-gray-icon: #5e6c84;
   --color-gray-mediem: #817f7f;
+  --color-gray-icon: #6b778c;
   --color-yellow: #e0c527;
   --color-green: #37bb3e;
   --color-blue: #3b4fff;
+  --color-blue-tittle-card: #172b4d;
   --color-red: #ff3838;
   --color-black: #161616;
   --color-white: #FFFFFF;
   --dynamic-background-color: hsl(150,2.7%,14.5%);
+  --color-card: #ebecf0;
+  --color-border-card: #091e4240;
 
- /*  nav background-color: var(--dynamic-background-color, #026AA7); 
- backdrop-filter: blur(6px);
- */
 
   /* primary color */
   /* secondary color */
@@ -41,9 +43,19 @@
 
   /* TYPOGRAFHY */
   /***************************/
+  /* line height */
+  --line-height-default: 20px;
+  --line-height-tittle: 20px;
+  /* font size */
+  --font-size-default: 14px;
+  --font-size-icon: 14px;
+  --font-size-title-card: 20px;
+  --font-size-task: 14px;
+  
   /* font family */
   --f-first: "Oswald", sans-serif;
   --f-second: "Raleway", sans-serif;
+  --f-third: -apple-system, BlinkMacSystemFont, Segoe UI,Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
 
   /* font weight */
   --fw-regular: 400;
@@ -65,7 +77,7 @@
   /* LAYOUT */
   /***************************/
   /* separator */
-  --gutter: 1rem; /* 10px */
+  --gutter: 1rem; /* 16px */
 
   /* others */
   --max-width: 1240px;
