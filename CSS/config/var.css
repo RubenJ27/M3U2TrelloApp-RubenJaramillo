@@ -46,6 +46,7 @@
   /* line height */
   --line-height-default: 20px;
   --line-height-tittle: 20px;
+  --line-height-tittle-board: 32px;
   /* font size */
   --font-size-default: 14px;
   --font-size-icon: 14px;
@@ -78,6 +79,7 @@
   /***************************/
   /* separator */
   --gutter: 1rem; /* 16px */
+  --gutter-header: 0.5rem;
 
   /* others */
   --max-width: 1240px;
