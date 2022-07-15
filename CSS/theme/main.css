@@ -7,6 +7,31 @@
   flex: 1;
   display: flex;
   gap: var(--gutter);
+  margin: 0 0.7rem;
+}
+
+.container__board{
+  display: flex;
+  background: #0000;
+  cursor: default;
+  margin: 0.7rem 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  max-width: calc(100% - 0px);
+  overflow: hidden;
+  padding-left: 2rem;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container__board__title{
+  color: var(--color-white);
+  font-size: 25px;
+  font-weight: var(--fw-bold);
+  line-height: var(--line-height-tittle-board);
+  padding: 0 12px;
 }
 
 .container__columns{
@@ -18,6 +43,41 @@
   flex-direction: column;
   height: 100%;
 }
+
+.container__columns--modifier{
+  background-color: #ffffff9d;
+  cursor: no-drop;
+  border-radius: 3px;
+  height: inherit;
+  height: auto;
+  height: 40px;
+  min-height: 40px;
+  padding: 4px;
+  transition: background 85ms ease-in,opacity 40ms ease-in,border-color 85ms ease-in; 
+}
+
+.add-card__icons{
+  display: block;
+  width: 172px;
+  cursor: no-drop;
+  color: #fff;
+  padding: 6px 8px;
+  transition: color 85ms ease-in;
+}
+
+.add-card__icon{
+  cursor: no-drop;
+  display: block;
+  color: #fff;
+  margin-right: 2px;
+}
+
+.container__boxes__column__add-list{
+  cursor: no-drop;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
 
 .container__row__title{
   display: flex;

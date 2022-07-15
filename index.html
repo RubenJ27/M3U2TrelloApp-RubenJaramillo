@@ -31,7 +31,7 @@
 
         <div class="container__header__profile">
           <span class="container__header__items__profile-btns">
-            <span class="container__header__app__profile-btn" role="img" aria-label="InformationIcon">
+            <span class="container__header__items__profile-btn" role="img" aria-label="InformationIcon">
               <svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -48,7 +48,7 @@
           </span>
 
           <span class="container__header__items__profile-btns">
-            <span class="container__header__item__profile-btn" role="img" aria-label="NotificationIcon">
+            <span class="container__header__items__profile-btn" role="img" aria-label="NotificationIcon">
               <svg width="24" height="24" role="presentation" focusable="false" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -68,6 +68,13 @@
     <!-- Canva -->
 
     <main class="main__container">
+      <!-- Titulo del proyecto -->
+      <div class="container__board">
+        <div class="container__board__name">
+          <h1 class="container__board__title">Proyecto | Trello App</h1>
+        </div>
+      </div>
+      <!-- Cierre titulo del proyecto -->
       <div class="container__boxes">
         <!-- Colums tareas por hacer -->
         <section class="container__columns">
@@ -149,6 +156,8 @@
               </div>
             </a>
 
+
+
           </div>
 
           <div class="container__add-task">
@@ -194,6 +203,8 @@
               </div>
             </a>
 
+
+
           </div>
 
 
@@ -207,6 +218,21 @@
 
         </section>
         <!-- Fin colums tareas finalizadas -->
+
+        <!-- Add list -->
+        <div class="container__columns container__columns--modifier">
+          <form>
+            <a href="#" class="container__boxes__column__add-list">
+              <span class="add-card__icons">
+                <span class="fa-solid fa-plus add-card__icon"></span>
+                Añada otra lista
+              </span>
+            </a>
+          </form>
+
+        </div>
+        <!-- Fin add list -->
+
       </div>
 
 
