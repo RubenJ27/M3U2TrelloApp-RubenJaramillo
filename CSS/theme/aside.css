@@ -1,0 +1,26 @@
+
+
+.aside__container{
+  width: 0;
+	height: 100%;
+  background-color: var(--color-white);
+  transition: all 300ms cubic-bezier(1,0,0,1);
+  z-index: 1000;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  overflow: hidden;
+}
+
+.show-lateral{
+  width: 350px;
+  transform: translateX(0px);
+  }
+
+.aside-form-tittle{
+  padding: 1.3rem 0;
+  letter-spacing: -0.1rem;
+  font-size: 25px;
+  font-weight: var(--fw-bold);
+}
+

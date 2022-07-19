@@ -1,10 +1,22 @@
-/* Llamado de librerías y herramientas y captura de información
-Hacer uso de las diferentes herramientas o librerías necesarias para añadir movimiento de la tarjetas para moverse entre cada columna a la que pertenezca, permitir el uso de JS para brindar la funcionalidad a la aplicación web capturando los datos en una fake API.
+const $addTask = document.querySelectorAll(".container__add-task");
 
-Descarga la plantilla de la tarea. (Haga click en el siguiente enlace (Enlaces a un sitio externo.)).
-Toma un pantallazo del estado actual de la aplicación
-Toma un pantallazo del commit mostrando la fecha de realización
-Pega en la plantilla de tarea los dos pantallazos (estado de aplicación y commit).
-Pega la URL del repositorio creado para esta tarea.
-Envía en formato PDF por el botón de pegar tarea que está en avance 2.
-La fecha máxima de entrega de este segundo avance es el 23 de julio de 2022. */
+const $cancelTask = document.getElementById("btnCancelnewtask");
+
+let selectorAddtask = ".container__add-task";
+
+
+document.addEventListener("click", (e)=> {//todo: esta linea es para seleccionar todo el selector de css e.target.matches(`${selectorAddtask} *`) en caso de no ponerla no funcionara si se le da click al icono dentro del boton solo si se le da click a el boton como tal, con esta linea habilitados la funcion a todo lo que este dentro de ese selector
+  function showForm(){
+    document.getElementById("newTaskModal").classList.toggle('show-lateral');
+  }
+  if (e.target.matches(`${selectorAddtask} *`)) {
+    showForm();
+  }
+
+  if (e.target === $cancelTask) {
+    showForm();
+  }
+
+});
+
+

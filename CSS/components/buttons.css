@@ -11,6 +11,11 @@
   background-color: var(--color-green);
 }
 
+.button-secondary{
+  border: var(--color-white);
+  background-color: var(--color-white);
+}
+
 .container__header__item__icon{
   display: flex;
   width: 32px;
