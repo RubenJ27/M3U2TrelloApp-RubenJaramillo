@@ -98,6 +98,7 @@
 
 .container__row__title__icons{
   display: flex;
+  text-decoration: none;
   justify-content: center;
   width: 32px;
   height: 32px;
@@ -117,18 +118,24 @@
 }
 
 .container__tasks{
+  border-radius: 5px;
+  box-shadow: 0 1px 0 var(--color-border-card);
+  background-color: var(--color-white);
   flex: 1 1 auto;
-  margin: 0 4px;
+  margin: 0 0.5rem;
   padding: 0 4px;
 }
 
 .container__tasks__row{
-  box-shadow: 0 1px 0 var(--color-border-card);
   padding: 6px 8px 2px;
   color: var(--color-blue-tittle-card);
   display: block;
   margin: 0 0 4px;
   text-decoration: none;
+}
+
+.container__tasks__row:hover{
+  color: var(--color-blue-tittle-card);
 }
 
 .container__task__title{
@@ -144,6 +151,7 @@
 .container__add-task{
   display: flex;
   justify-content: space-between;
+  margin-top: 0.3rem;
   max-height: 38px;
   min-height: 38px;
 }
