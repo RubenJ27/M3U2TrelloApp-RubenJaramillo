@@ -85,7 +85,7 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks">
+          <div class="container__tasks" id="toDo">
             <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Website Launch Checklist Overview
@@ -132,7 +132,7 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks">
+          <div class="container__tasks" id="inProgress">
             <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Things to-do in project
@@ -179,7 +179,7 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks">
+          <div class="container__tasks" id="completed">
             <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Tasks in to-do that have been thoroughly completed
@@ -219,6 +219,8 @@
 
         </section>
         <!-- Fin colums tareas finalizadas -->
+
+       
 
         <!-- Add list -->
         <div class="container__columns container__columns--modifier">
@@ -306,13 +308,17 @@
 
 
 
+
 </body>
 <script src="https://unpkg.com/moment"></script>
 <script src="https://hammerjs.github.io/dist/hammer.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="assets/DOM.JS"></script>
+<script src="assets/DOM.JS" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!-- Sortable only -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+
 
 </html>
