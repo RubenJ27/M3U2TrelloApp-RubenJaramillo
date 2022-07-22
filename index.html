@@ -91,6 +91,15 @@
                 Website Launch Checklist Overview
               </span>
 
+              <div class="container__tasks__description">
+                <span class="container__tasks__description__tittle">
+                  Descripcion:
+                </span>
+                <span class="container__tasks__description__data">
+                  Lorem ipsum dolor sip.
+                </span>
+              </div>
+
               <div class="container__tasks__responsible">
                 <span class="container__tasks__responsible__tittle">
                   Responsible:
@@ -138,6 +147,15 @@
                 Things to-do in project
               </span>
 
+              <div class="container__tasks__description">
+                <span class="container__tasks__description__tittle">
+                  Descripcion:
+                </span>
+                <span class="container__tasks__description__data">
+                  Lorem ipsum dolor sit amet conse.
+                </span>
+              </div>
+
               <div class="container__tasks__responsible">
                 <span class="container__tasks__responsible__tittle">
                   Responsible:
@@ -184,6 +202,15 @@
               <span class="container__task__title" id="taskToDo">
                 Tasks in to-do that have been thoroughly completed
               </span>
+
+              <div class="container__tasks__description">
+                <span class="container__tasks__description__tittle">
+                  Descripcion:
+                </span>
+                <span class="container__tasks__description__data">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </span>
+              </div>
 
               <div class="container__tasks__responsible">
                 <span class="container__tasks__responsible__tittle">
@@ -255,12 +282,18 @@
           <form class="form-new-task" id="formNewTask">
             <!-- Input titulo  -->
             <div class="row-form">
-              <label for="tittleTask" Task" class="form-newTask__task__label form-label">Titulo</label><br>
-              <input id="tittlename="tittleTask" type="text" class="form-new-task__input form-control"
+              <label for="tittleTask" class="form-newTask__task__label form-label">Titulo</label><br>
+              <input id="tittlename=" type="text" class="form-new-task__input form-control"
                 placeholder="Escribe un titulo descriptivo">
             </div>
             <!-- Fin input titulo -->
-
+            <!-- Descripcion -->
+            <div class="row-form">
+              <label for="description" class="form-newTask__task__label form-label">Descripcion</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            
+            <!-- Cierre descripcion -->
           <!-- Input responsable  -->
             <div class="row-form">
               <label for="responsable" class="form-newTask__task__label form-label">Resposable</label><br>
@@ -310,14 +343,23 @@
 
 
 </body>
+
+
+<!-- Archivos internos -->
+<script src="assets/DOM.JS" type="module"></script>
+<script src="js/helpers/addCardform.js"></script>
+<!-- Cierre archivos internos -->
+
+<!-- Archivos externos -->
 <script src="https://unpkg.com/moment"></script>
 <script src="https://hammerjs.github.io/dist/hammer.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="assets/DOM.JS" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <!-- Sortable only -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<!-- Cierre archivos externos -->
+
 
 
 

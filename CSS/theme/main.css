@@ -147,6 +147,12 @@
   font-weight: var(--fw-semi-bold);
 }
 
+.container__tasks__description{
+  width: auto;
+  height: auto;
+  margin: 10px 0;
+}
+
 .container__tasks__responsible{
   margin: 10px 0;
 }
