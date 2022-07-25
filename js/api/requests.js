@@ -1,5 +1,5 @@
-const API_URL = "https://my-json-server.typicode.com/RubenJ27/M3U2TrelloApp-RubenJaramillo";
-
+const API_URL =
+  "https://my-json-server.typicode.com/RubenJ27/M3U2TrelloApp-RubenJaramillo";
 
 axios
   .get(`${API_URL}/tasks`)
@@ -13,7 +13,7 @@ const showAllTasks = (data) => {
 const createTask = (task) => {
   let newTask = document.createElement("article");
   newTask.classList.add("container__tasks__row");
-  
+
   let taskTitle = document.createElement("h3");
   taskTitle.classList.add("container__task__title");
   taskTitle.innerText = task.title;
@@ -36,17 +36,21 @@ const createTask = (task) => {
   <span class="container__task__badges__icons">
   <div class="container__task__badges__due-date">
     <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
-    <span class="container__task__badges__due-date-text">Plazo: ${dateFormat(task.deadline)}</span>
+    <span class="container__task__badges__due-date-text">Plazo: ${dateFormat(
+      task.deadline
+    )}</span>
   </div>
 </span>
 </div>`;
 
-  let taskCreate = document.createElement("p")
-  taskCreate.classList.add("card-task__date")
+  let taskCreate = document.createElement("p");
+  taskCreate.classList.add("card-task__date");
   taskCreate.innerHTML = `<span class="container__task__badges__icons">
   <div class="container__task__badges__due-date">
     <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i> Creacion: </span>
-    <span class="container__task__badges__due-date-text">${dateFormat(task.created)}</span>
+    <span class="container__task__badges__due-date-text">${dateFormat(
+      task.created
+    )}</span>
   </div>
 </span>`;
 
@@ -56,10 +60,9 @@ const createTask = (task) => {
   newTask.appendChild(taskDate);
   newTask.appendChild(taskCreate);
 
-  let columnToDo = document.querySelector("#todoTasks")
+  let columnToDo = document.querySelector("#todoTasks");
   let columnInProgress = document.querySelector("#progressTasks");
   let columnDone = document.querySelector("#doneTasks");
-
 
   if (task.state === "to-do") {
     columnToDo.appendChild(newTask);
@@ -70,6 +73,4 @@ const createTask = (task) => {
   if (task.state === "done") {
     columnDone.appendChild(newTask);
   }
-
-
 };
