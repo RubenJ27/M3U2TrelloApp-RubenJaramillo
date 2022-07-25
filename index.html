@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/trello.svg">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/04a8186d46.js" crossorigin="anonymous"></script>
   <title>Trello App</title>
 </head>
@@ -66,16 +67,17 @@
     </header>
     <!-- Cierre del header -->
 
-    <!-- Canva -->
+  <!-- Canva -->
 
-    <main class="main__container">
-      <!-- Titulo del proyecto -->
-      <div class="container__board">
-        <div class="container__board__name">
-          <h1 class="container__board__title">Proyecto | Trello App</h1>
-        </div>
-      </div>
+  <main class="main__container">
+          <!-- Titulo del proyecto -->
+          <div class="container__board">
+            <div class="container__board__name">
+              <h1 class="container__board__title">Proyecto | Trello App</h1>
+            </div>
+          </div>
       <!-- Cierre titulo del proyecto -->
+
       <div class="container__boxes">
         <!-- Colums tareas por hacer -->
         <section class="container__columns">
@@ -85,8 +87,8 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks" id="toDo">
-            <a href="#" class="container__tasks__row">
+          <div class="container__tasks" id="todoTasks">
+           <!--  <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Website Launch Checklist Overview
               </span>
@@ -117,7 +119,7 @@
                   </div>
                 </span>
               </div>
-            </a>
+            </a> -->
 
           </div>
 
@@ -141,8 +143,8 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks" id="inProgress">
-            <a href="#" class="container__tasks__row">
+          <div class="container__tasks" id="progressTasks"">
+            <!-- <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Things to-do in project
               </span>
@@ -168,12 +170,21 @@
               <div class="container__tasks__badges">
                 <span class="container__task__badges__icons">
                   <div class="container__task__badges__due-date">
-                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
+                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i> Plazo: </span>
                     <span class="container__task__badges__due-date-text">30 de ago</span>
                   </div>
                 </span>
               </div>
-            </a>
+
+              <div class="container__tasks__badges">
+                <span class="container__task__badges__icons">
+                  <div class="container__task__badges__due-date">
+                    <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i> Creacion: </span>
+                    <span class="container__task__badges__due-date-text">30 de ago</span>
+                  </div>
+                </span>
+              </div>
+            </a> -->
 
 
 
@@ -197,8 +208,8 @@
               <a href="#" class="container__row__title__icon"><i class="fa-solid fa-ellipsis"></i></a>
             </div>
           </div>
-          <div class="container__tasks" id="completed">
-            <a href="#" class="container__tasks__row">
+          <div class="container__tasks" id="doneTasks">
+            <!-- <a href="#" class="container__tasks__row">
               <span class="container__task__title" id="taskToDo">
                 Tasks in to-do that have been thoroughly completed
               </span>
@@ -229,9 +240,9 @@
                   </div>
                 </span>
               </div>
-            </a>
+            </a> -->
 
-            
+
 
           </div>
 
@@ -247,8 +258,6 @@
         </section>
         <!-- Fin colums tareas finalizadas -->
 
-       
-
         <!-- Add list -->
         <div class="container__columns container__columns--modifier">
           <form>
@@ -263,77 +272,74 @@
         </div>
         <!-- Fin add list -->
 
-      </div>
-
-
-  </div>
+       </div>
   </main>
 
   <!-- Cierre del canva -->
 
   <!-- Aside -->
-  
-    <aside class="aside__container" id="newTaskModal">
-      
-      <div class="l-container">
-        <div class="form-container">
-          <h2 class="aside-form-tittle">Nueva tarea</h2>
 
-          <form class="form-new-task" id="formNewTask">
-            <!-- Input titulo  -->
-            <div class="row-form">
-              <label for="tittleTask" class="form-newTask__task__label form-label">Titulo</label><br>
-              <input id="tittlename=" type="text" class="form-new-task__input form-control"
-                placeholder="Escribe un titulo descriptivo">
-            </div>
-            <!-- Fin input titulo -->
-            <!-- Descripcion -->
-            <div class="row-form">
-              <label for="description" class="form-newTask__task__label form-label">Descripcion</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            
-            <!-- Cierre descripcion -->
+  <aside class="aside__container" id="newTaskModal">
+
+    <div class="l-container">
+      <div class="form-container">
+        <h2 class="aside-form-tittle">Nueva tarea</h2>
+
+        <form class="form-new-task" id="formNewTask">
+          <!-- Input titulo  -->
+          <div class="row-form">
+            <label for="tittleTask" class="form-newTask__task__label form-label">Titulo</label><br>
+            <input id="tittlename=" type="text" class="form-new-task__input form-control"
+              placeholder="Escribe un titulo descriptivo">
+          </div>
+          <!-- Fin input titulo -->
+          <!-- Descripcion -->
+          <div class="row-form">
+            <label for="description" class="form-newTask__task__label form-label">Descripcion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <!-- Cierre descripcion -->
           <!-- Input responsable  -->
-            <div class="row-form">
-              <label for="responsable" class="form-newTask__task__label form-label">Resposable</label><br>
-              <select name="responsableTask" id="resposanbleTask" class="form-select">
-                <option value="">--Seleccionar--</option>
-                <option value="user01">User 01</option>
-                <option value="user02">User 02</option>
-                <option value="user02">User 03</option>
-              </select>
+          <div class="row-form">
+            <label for="responsable" class="form-newTask__task__label form-label">Resposable</label><br>
+            <select name="responsableTask" id="resposanbleTask" class="form-select">
+              <option value="">--Seleccionar--</option>
+              <option value="user01">User 01</option>
+              <option value="user02">User 02</option>
+              <option value="user02">User 03</option>
+            </select>
+          </div>
+          <!-- Fin input responsable -->
+
+          <!-- Input deadline  -->
+          <div class="row-form">
+            <label for="deadLineTask" class="form-newTask__task__label form-label">Plazo de entrega</label><br>
+            <select name="responsableTask" id="resposanbleTask" class="form-select">
+              <option value="">--Seleccionar--</option>
+              <option value="oneDay">1 Dia</option>
+              <option value="twoDays">2 Dias</option>
+              <option value="sevenDays">1 Semana</option>
+            </select>
+
+          </div>
+
+          <!-- Fin deadline -->
+
+          <!-- Botones  -->
+          <div class="row-form">
+            <div class="form-new-task__buttons">
+              <button class="btn btn-success" type="submit">Guardar</button>
+              <button type="reset" class="btnCancelnewtask btn btn-light" id="btnCancelnewtask">Cancelar</button>
             </div>
-            <!-- Fin input responsable -->
+          </div>
 
-   <!-- Input deadline  -->
-            <div class="row-form">
-              <label for="deadLineTask" class="form-newTask__task__label form-label">Plazo de entrega</label><br>
-              <select name="responsableTask" id="resposanbleTask" class="form-select">
-                <option value="">--Seleccionar--</option>
-                <option value="oneDay">1 Dia</option>
-                <option value="twoDays">2 Dias</option>
-                <option value="sevenDays">1 Semana</option>
-              </select>
-
-            </div>
-
-            <!-- Fin deadline -->
-
-        <!-- Botones  -->
-            <div class="row-form">
-              <div class="form-new-task__buttons">
-                <button class="btn btn-success" type="submit">Guardar</button>
-                <button type="reset" class="btnCancelnewtask btn btn-light" id="btnCancelnewtask">Cancelar</button>
-              </div>
-            </div>
-
-             <!-- Fin botones  -->
-          </form>
-        </div>
-
+          <!-- Fin botones  -->
+        </form>
       </div>
-    </aside> 
+
+    </div>
+  </aside>
   <!-- Cierre aside -->
 
 
@@ -345,20 +351,25 @@
 </body>
 
 
-<!-- Archivos internos -->
-<script src="assets/DOM.JS" type="module"></script>
-<script src="js/helpers/addCardform.js"></script>
-<!-- Cierre archivos internos -->
-
 <!-- Archivos externos -->
-<script src="https://unpkg.com/moment"></script>
-<script src="https://hammerjs.github.io/dist/hammer.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="js/libraries/axios.js"></script>
+<script src="js/libraries/moment.js"></script>
 <!-- Sortable only -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <!-- Cierre archivos externos -->
+
+<!-- Archivos internos -->
+<script src="assets/DOM.JS" type="module"></script>
+<script src="js/api/requests.js"></script>
+<script src="js/helpers/dates.js"></script>
+<script src="js/helpers/addCardform.js"></script>
+
+
+<!-- Cierre archivos internos -->
 
 
 

@@ -1,6 +1,6 @@
 /* funcionalidad arrastrar y soltar tareas en las columnas */
 
-const prueba = document.querySelectorAll("container__columns");
+/* const prueba = document.querySelectorAll("container__columns");
 
 new Sortable(toDo, {
   group: 'shared', // set both lists to same group
@@ -15,6 +15,6 @@ new Sortable(inProgress, {
 new Sortable(completed, {
   group: 'shared',
   animation: 150
-});
+}); */
 
 /* cerrar funcionalidad arrastrar y soltar tareas en las columnas */

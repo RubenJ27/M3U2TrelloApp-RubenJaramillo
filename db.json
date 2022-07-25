@@ -6,17 +6,17 @@
       "person": "Ruben",
       "details": "lorem irum sorius lapsun lur diam perun",
       "state": "done",
-      "deadline": 242365346,
-      "created": 43634654
+      "deadline": 1658754187,
+      "created": 1615352159
     },
     {
       "id": 2,
       "title": "Backend",
       "person": "Sofia",
       "details": "lorem ipsu som",
-      "state": "done",
-      "deadline": 242365346,
-      "created": 43634654
+      "state": "to-do",
+      "deadline": 1664110987,
+      "created": 1615352159
     }
   ]
 }

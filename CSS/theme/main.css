@@ -142,7 +142,7 @@
 }
 
 .container__task__title{
-  font-size: var(--font-size-default);
+  font-size: 15px;
   color: var(--color-blue-tittle-card);
   font-weight: var(--fw-semi-bold);
 }
