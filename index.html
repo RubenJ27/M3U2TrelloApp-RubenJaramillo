@@ -288,22 +288,22 @@
         <form class="form-new-task" id="formNewTask">
           <!-- Input titulo  -->
           <div class="row-form">
-            <label for="tittleTask" class="form-newTask__task__label form-label">Titulo</label><br>
-            <input id="tittlename=" type="text" class="form-new-task__input form-control"
+            <label for="titleTask" class="form-newTask__task__label form-label">Titulo</label><br>
+            <input id="titleTask" name="titleTask" type="text" class="form-new-task__input form-control"
               placeholder="Escribe un titulo descriptivo">
           </div>
           <!-- Fin input titulo -->
           <!-- Descripcion -->
           <div class="row-form">
-            <label for="description" class="form-newTask__task__label form-label">Descripcion</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="detailsTask" class="form-newTask__task__label form-label">Descripcion</label>
+            <textarea class="form-control" name="detailsTask" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
           <!-- Cierre descripcion -->
           <!-- Input responsable  -->
           <div class="row-form">
-            <label for="responsable" class="form-newTask__task__label form-label">Resposable</label><br>
-            <select name="responsableTask" id="resposanbleTask" class="form-select">
+            <label for="responsibleTask" class="form-newTask__task__label form-label">Resposable</label><br>
+            <select name="responsibleTask" id="responsibleTask" class="form-select">
               <option value="">--Seleccionar--</option>
               <option value="user01">User 01</option>
               <option value="user02">User 02</option>
@@ -315,7 +315,7 @@
           <!-- Input deadline  -->
           <div class="row-form">
             <label for="deadLineTask" class="form-newTask__task__label form-label">Plazo de entrega</label><br>
-            <select name="responsableTask" id="resposanbleTask" class="form-select">
+            <select name="deadLineTask" id="resposanbleTask" class="form-select">
               <option value="">--Seleccionar--</option>
               <option value="oneDay">1 Dia</option>
               <option value="twoDays">2 Dias</option>
@@ -370,6 +370,7 @@
 <script src="js/helpers/addCardform.js"></script>
 <script src="js/helpers/draggandDrop.js"></script>
 <script src="js/helpers/evenetHammer.js"></script>
+<script src="js/helpers/createNewtask.js"></script>
 
 
 <!-- Cierre archivos internos -->
