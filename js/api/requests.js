@@ -11,7 +11,7 @@ const showAllTasks = (data) => {
 };
 
 const createTask = (task) => {
-  let newTask = document.createElement("article");
+  let newTask = document.createElement("div");
   newTask.classList.add("container__tasks__row");
 
   let taskTitle = document.createElement("h3");

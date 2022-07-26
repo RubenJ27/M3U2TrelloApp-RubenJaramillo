@@ -5,7 +5,7 @@ form.addEventListener('submit', (ev) => {
   // Evitamos que la pagina se recargue cuando se envian los datos
   ev.preventDefault();
   const formData = ev.target;
-  console.log(`hola ${formData.deadLineTask.value}`)
+
   // Recopilamos la información a enviar a la API
   const data = {
     title: formData.titleTask.value,
