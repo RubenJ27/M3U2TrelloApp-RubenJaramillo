@@ -125,7 +125,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   min-height: 0;
-  max-height: 200px;
+  max-height: 230px;
 }
 
 .container__tasks__row{
@@ -153,7 +153,8 @@
 }
 
 .container__task__title{
-  font-size: 15px;
+  margin: 1rem 0;
+  font-size: 16.5px;
   color: var(--color-blue-tittle-card);
   font-weight: var(--fw-semi-bold);
 }

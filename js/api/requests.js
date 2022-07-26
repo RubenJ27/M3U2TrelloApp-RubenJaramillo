@@ -32,16 +32,14 @@ const createTask = (task) => {
 
   let taskDate = document.createElement("p");
   taskDate.classList.add("card-task__date");
-  taskDate.innerHTML = `<div class="container__tasks__badges">
-  <span class="container__task__badges__icons">
+  taskDate.innerHTML = `<span class="container__task__badges__icons">
   <div class="container__task__badges__due-date">
     <span class="container__task__badges__due-date__icon"><i class="fa-solid fa-clock"></i></span>
     <span class="container__task__badges__due-date-text">Plazo: ${dateFormat(
       task.deadline
     )}</span>
   </div>
-</span>
-</div>`;
+</span>`;
 
   let taskCreate = document.createElement("p");
   taskCreate.classList.add("card-task__date");
